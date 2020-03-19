@@ -10,7 +10,7 @@ from paho.mqtt import __version__
 with open('README.rst', 'rb') as readme_file:
     readme = readme_file.read().decode('utf-8')
 
-requirements = []
+requirements = ['eventfd']
 test_requirements = ['pytest', 'pylama', 'six']
 needs_pytest = {'pytest', 'test', 'ptr'}.intersection(sys.argv)
 setup_requirements = ['pytest-runner'] if needs_pytest else []
